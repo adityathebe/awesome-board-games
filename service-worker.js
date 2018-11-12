@@ -21,19 +21,19 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.2/workbox
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "f6b72fa204d11e8c39045570cb98ab55"
+    "revision": "c869947a155d8e9c67fd81a8cc2ad9c7"
   },
   {
     "url": "assets/css/1.styles.24a124da.css",
     "revision": "d41d8cd98f00b204e9800998ecf8427e"
   },
   {
-    "url": "assets/css/2.styles.ab50d6a7.css",
-    "revision": "f50946267654a3dde90385509482967b"
+    "url": "assets/css/2.styles.de6c8cdd.css",
+    "revision": "df7c35ec8029dbbde0735a45f875eaf7"
   },
   {
-    "url": "assets/css/styles.c3a5eafc.css",
-    "revision": "a5b6f05876b885e99c448630260acc10"
+    "url": "assets/css/styles.59a81f54.css",
+    "revision": "2a0bf7716a5b4cf315733e4d691ff3bc"
   },
   {
     "url": "assets/img/Jon_Board.f1f14fb1.png",
@@ -52,7 +52,7 @@ self.__precacheManifest = [
     "revision": "138f9763bb4c3d14b68ed1c5d0291423"
   },
   {
-    "url": "assets/js/2.ab50d6a7.js",
+    "url": "assets/js/2.de6c8cdd.js",
     "revision": "76f22423cf5b7497e0138a4b2e122c98"
   },
   {
@@ -76,24 +76,24 @@ self.__precacheManifest = [
     "revision": "65971f605b9a1c76167ab519ba3dd04c"
   },
   {
-    "url": "assets/js/app.c3a5eafc.js",
-    "revision": "b055a707d52f14f552625456992da4e4"
+    "url": "assets/js/app.59a81f54.js",
+    "revision": "39ba7abc88034d3bf5df7bd600043190"
   },
   {
     "url": "code-of-conduct.html",
-    "revision": "c68752704944973f9d36fb23e06f63ff"
+    "revision": "faab6d9af3b6f42b69364bdf345a8120"
   },
   {
     "url": "contributing.html",
-    "revision": "34c1b8516c47503d57f1df3543555e8c"
+    "revision": "965070d37143326d38d507f59e6e3bfb"
   },
   {
     "url": "formatting.html",
-    "revision": "0413dc2a224b509f9ce337b00cfacb24"
+    "revision": "2bd15a318d68e234fb766d918f63014c"
   },
   {
     "url": "help.html",
-    "revision": "a00a0b1e4d6192f8e81e8f2ff3834a27"
+    "revision": "25279e8bb07486cda316aeccd0773a13"
   },
   {
     "url": "icon/apple-touch-icon-114x114.png",
@@ -173,7 +173,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "784fcd9237ffa6f1963a222a3803c3ad"
+    "revision": "451498e3846f4102a2783043d65e3ea8"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
