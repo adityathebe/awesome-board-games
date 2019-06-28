@@ -11,7 +11,13 @@
  * See https://goo.gl/2aRDsh
  */
 
-importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
+importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
+
+self.addEventListener('message', (event) => {
+  if (event.data && event.data.type === 'SKIP_WAITING') {
+    self.skipWaiting();
+  }
+});
 
 /**
  * The workboxSW.precacheAndRoute() method efficiently caches and responds to
@@ -21,11 +27,11 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "6e174971382f63d52f5f02d799b55e47"
+    "revision": "5f5ab378f7a057b2d0bd58500bebb15b"
   },
   {
-    "url": "assets/css/0.styles.0d19fd84.css",
-    "revision": "9bb6b9f88c684f84f2eb3ace755e382e"
+    "url": "assets/css/0.styles.2bcbe07c.css",
+    "revision": "c1682b89fc2aa52022d05dccb0dc8991"
   },
   {
     "url": "assets/img/Jon_Board.f1f14fb1.png",
@@ -40,52 +46,64 @@ self.__precacheManifest = [
     "revision": "83621669651b9a3d4bf64d1a670ad856"
   },
   {
-    "url": "assets/js/2.81f9aa6f.js",
-    "revision": "e3d8ee90cc80a3b878fa4c3ad7512986"
+    "url": "assets/js/10.7c57d461.js",
+    "revision": "b68bedabff79d7a7deabe7751c76a734"
   },
   {
-    "url": "assets/js/3.323be9be.js",
-    "revision": "5d757bc5464994d828c0f0e1cbddb3d4"
+    "url": "assets/js/11.988e0a5c.js",
+    "revision": "b4ce2601405ed3149b700069d87d28fd"
   },
   {
-    "url": "assets/js/4.f10329d0.js",
-    "revision": "664135c56889d0381dc5ffc1f8b073e6"
+    "url": "assets/js/2.aa49387d.js",
+    "revision": "c52a9a4d267a75c073c00d7fcf2cf3c6"
   },
   {
-    "url": "assets/js/5.e5cf3f6f.js",
-    "revision": "a3a50d42206ef29723b207069a97fe5a"
+    "url": "assets/js/3.36af70db.js",
+    "revision": "4285050dd72b8d598e9cc550240bfeec"
   },
   {
-    "url": "assets/js/6.63b7861d.js",
-    "revision": "7e16dc6ac0ff761b28f1150a5bac2abe"
+    "url": "assets/js/4.5364c3b2.js",
+    "revision": "8ff937db51db01defaae935d5fb002e6"
   },
   {
-    "url": "assets/js/7.70659880.js",
-    "revision": "d589d34b1bcb36c5d30f295b589413f0"
+    "url": "assets/js/5.b733fabf.js",
+    "revision": "2c3b041bc31df2cec24443a0b6b11207"
   },
   {
-    "url": "assets/js/8.d3bed891.js",
-    "revision": "61568b6432785bce582f2999c3107f33"
+    "url": "assets/js/6.ef0b0b6c.js",
+    "revision": "74898a8ee863c530b04036e850af23de"
   },
   {
-    "url": "assets/js/app.dff34ad7.js",
-    "revision": "ce4bc14424d0c1fe5f4cc42dca50367b"
+    "url": "assets/js/7.2c20fe06.js",
+    "revision": "1c0b6d0fb575a4218cc688f3bb95dc8f"
+  },
+  {
+    "url": "assets/js/8.abc716ad.js",
+    "revision": "0f61b82b82673d4a8cecdc17d133b930"
+  },
+  {
+    "url": "assets/js/9.28a60f0e.js",
+    "revision": "22f966f83f68dae2a7a7ce56bdb02dd6"
+  },
+  {
+    "url": "assets/js/app.8f5681fd.js",
+    "revision": "5c18b72322318c6faa46e0086b2e82b2"
   },
   {
     "url": "code-of-conduct.html",
-    "revision": "21e63d192185d6cfd0711472ff595118"
+    "revision": "4370804c26bef30239467ab946dac794"
   },
   {
     "url": "contributing.html",
-    "revision": "e1d355cb6bc0eccbf71a4a67bc1a3104"
+    "revision": "45319b39e7d03a787f15d33a02b513ce"
   },
   {
     "url": "formatting.html",
-    "revision": "1850397c22b9f5fc4583ed100f0e3eb4"
+    "revision": "f92eb9309a5a16c5ae178ff4f52ac41d"
   },
   {
     "url": "help.html",
-    "revision": "2822ce945cc6ca8c21ce53055988d48b"
+    "revision": "99e02814d51fe0966f00b7c45eeb92d0"
   },
   {
     "url": "icon/apple-touch-icon-114x114.png",
@@ -165,10 +183,9 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "c405cda1862c5196da06167489bb8808"
+    "revision": "bf632a3f888501d73c5b4b07f47af6b5"
   }
 ].concat(self.__precacheManifest || []);
-workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 addEventListener('message', event => {
   const replyPort = event.ports[0]
