@@ -27,7 +27,7 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "04e89c9a0fe3ee0445c74e694f9c8d46"
+    "revision": "c675591db7b7dcdfb8fb8e0e42bc9100"
   },
   {
     "url": "assets/css/0.styles.2bcbe07c.css",
@@ -66,12 +66,12 @@ self.__precacheManifest = [
     "revision": "8ff937db51db01defaae935d5fb002e6"
   },
   {
-    "url": "assets/js/5.b733fabf.js",
-    "revision": "2c3b041bc31df2cec24443a0b6b11207"
+    "url": "assets/js/5.9e07dbbb.js",
+    "revision": "3fb493af7c615620dcf65c3f7b856846"
   },
   {
-    "url": "assets/js/6.1c435a6e.js",
-    "revision": "bc216c8eb078331cf994a790743e26a8"
+    "url": "assets/js/6.88852b1d.js",
+    "revision": "10b8b050394dddde77ab174fd014c8db"
   },
   {
     "url": "assets/js/7.2c20fe06.js",
@@ -86,24 +86,24 @@ self.__precacheManifest = [
     "revision": "22f966f83f68dae2a7a7ce56bdb02dd6"
   },
   {
-    "url": "assets/js/app.9e52976d.js",
-    "revision": "0898ccf0725357478292f00178d54385"
+    "url": "assets/js/app.f88fb179.js",
+    "revision": "cb8d5fbed00cab15965f20d3136e8d4c"
   },
   {
     "url": "code-of-conduct.html",
-    "revision": "1788e97428d3fb992a5e61385c270963"
+    "revision": "634d92361b619b38c824525795b763a2"
   },
   {
     "url": "contributing.html",
-    "revision": "6b5d4fd774412f6011a7d1e08c2bad83"
+    "revision": "6e27e2057117e1794de0891fe5560b3b"
   },
   {
     "url": "formatting.html",
-    "revision": "573f962f8df685619e0926569b519fcf"
+    "revision": "c8004d6b2d5a8b5a8c8db11f9b7d5711"
   },
   {
     "url": "help.html",
-    "revision": "785ad8b2e9c81405f8b90d6ecd421d99"
+    "revision": "56021a48257de71707f99ce2c6e92237"
   },
   {
     "url": "icon/apple-touch-icon-114x114.png",
@@ -183,7 +183,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "74e928f2977e66dfc2ba2cddaa50c85c"
+    "revision": "d6946d90caa23043e793bcafc82a2c6f"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
